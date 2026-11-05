@@ -1,0 +1,431 @@
+
+/* ==========================================
+   1. HEADER - LOGO LEFT, HEADING RIGHT
+========================================== */
+
+header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 30px;
+    background: linear-gradient(120deg, #082b55, #164d7d);
+    border-bottom: 5px solid #e5b43c;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+}
+
+.brand {
+    text-align: left;
+}
+
+.brand h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.brand p {
+    color: #ffda79;
+    font-size: 25px;
+    text-align: left;
+    margin: 0;
+}
+
+
+/* ==========================================
+   2. NAVIGATION - SPACED BOXES
+========================================== */
+
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 15px 20px;
+    background: #061e3a;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: 1px solid #496987;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #e5b43c;
+    color: #061e3a;
+    border-color: #e5b43c;
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   3. MAIN CONTAINER
+========================================== */
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 25px 30px;
+    margin: 0;
+}
+
+
+/* ==========================================
+   4. EACH SECTION SEPARATELY
+========================================== */
+
+.container > section {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    padding: 40px;
+    margin: 0 0 35px 0;
+    border: 1px solid #dce5ef;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    clear: both;
+    overflow: hidden;
+}
+
+
+/* ==========================================
+   5. ALL SECTION HEADINGS CENTER
+========================================== */
+
+.container section h1,
+.container section h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #0b3763;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 auto 30px auto;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #e5b43c;
+    line-height: 1.4;
+}
+
+.container section h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #145a91;
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   6. ALL PARAGRAPHS
+========================================== */
+
+.container section p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 22px;
+}
+
+
+/* ==========================================
+   7. SECTION IMAGES
+========================================== */
+
+.container section > img,
+.container section.responsive-image > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+    margin: 25px auto;
+}
+
+
+/* ==============================
+   ADMISSION IMAGE SMALL
+============================== */
+
+#admissions > img {
+    display: block;
+    width: 65%;
+    max-width: 750px;
+    height: auto;
+    margin: 25px auto;
+    object-fit: contain;
+}
+/* ==========================================
+   8. COURSE AND FACILITY CARDS
+========================================== */
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.card {
+    width: 100%;
+    background: #f5f8fc;
+    border: 1px solid #d8e2ed;
+    border-radius: 15px;
+    padding: 22px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    border-color: #e5b43c;
+}
+
+.card h3 {
+    background: #0b3763;
+    color: white !important;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 26px !important;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 17px !important;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   9. FACULTY AND STAFF LINKS
+========================================== */
+
+.responsive-image {
+    text-align: center;
+}
+
+.responsive-image a {
+    display: inline-block;
+    background: #0b3763;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 14px 28px;
+    margin: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.responsive-image a:hover {
+    background: #e5b43c;
+    color: #061e3a;
+}
+
+
+/* ==========================================
+   10. BUTTON DESIGN
+========================================== */
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 30px;
+    background: #0b3763;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.btn:hover {
+    background: #e5b43c;
+    color: #061e3a;
+}
+
+
+/* ==========================================
+   11. CONTACT DETAILS
+========================================== */
+
+#contact p {
+    font-size: 50px;
+    line-height: 1.9;
+}
+
+#contact strong {
+    color: #0b3763;
+}
+
+
+
+/* ==============================
+   CONTACT IMAGE SMALL
+============================== */
+
+#contact > img {
+    display: block;
+    width: 55%;
+    max-width: 650px;
+    height: auto;
+    margin: 25px auto;
+    object-fit: contain;
+}
+
+
+
+/* ==========================================
+   12. FOOTER
+========================================== */
+
+footer {
+    width: 100%;
+    background: #061e3a;
+    border-top: 5px solid #e5b43c;
+    padding: 30px;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    margin: 5px;
+}
+
+
+/* ==========================================
+   13. TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        gap: 15px;
+    }
+
+    .brand h1 {
+        font-size: 30px;
+    }
+
+    .container section {
+        padding: 25px;
+    }
+}
+
+
+/* ==========================================
+   14. MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 15px;
+        gap: 12px;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .brand h1 {
+        font-size: 19px;
+    }
+
+    .brand p {
+        font-size: 12px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        width: 90%;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    .container section {
+        padding: 18px;
+        margin-bottom: 22px;
+    }
+
+    .container section h1,
+    .container section h2 {
+        font-size: 28px;
+    }
+
+    .container section h3 {
+        font-size: 22px;
+    }
+
+    .container section p {
+        font-size: 17px;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card p {
+        font-size: 16px !important;
+    }
+
+    .responsive-image a {
+        display: block;
+        font-size: 16px;
+    }
+}
+
